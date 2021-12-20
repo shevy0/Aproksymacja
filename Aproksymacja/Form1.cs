@@ -24,7 +24,6 @@ namespace Aproksymacja
             textBox_Y.Enabled = false;
             button_addpoint.Enabled = false;
             this.temp = 0;
-            //MessageBox.Show("jeśli dis jest pierdolony w ręce klaszcz");
         }
 
         private void button_lp_accept_Click(object sender, EventArgs e)
@@ -171,8 +170,3 @@ namespace Aproksymacja
         }
     }
 }
-
-//            foreach (var a in this.chartPoints)
-//{ 
-//    MessageBox.Show(a[0].ToString() + " " + a[1].ToString());murzyn garnucvhyvvvvvvvvvvvvvvvvvvvvvvvvvvvv czarni do narni @marcin
-// 
