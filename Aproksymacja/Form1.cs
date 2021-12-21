@@ -167,6 +167,54 @@ namespace Aproksymacja
             }
             // Kuba - rozwiązanie układu równań metodą Jordana - Gaussa
 
+            for(int p = 0; p <= sw; p++)
+            {
+                for (int wier = 0; wier <= sw; wier++)
+                {
+                    double m = tab[wier, p] / tab[p, p];
+                    for (int kolum = 0; kolum <= sw; wier++)
+                    {
+                        //działanie na wszystkich komórkach z wiersza
+                        tab[wier, kolum] = tab[wier, kolum] - (m * tab[p, kolum]);
+                    }
+                    tab[wier, sw + 1] = tab[wier, sw + 1] - (m * tarr[p]);
+                }
+            }
+
+            //eliminacja
+            double tem = 0; //tymczasowe
+            double u = 0; // nieznane
+            double[] x = new double[sw+1]; //tablica z wynikami metody gauassa (czyli x1, x2, x3)
+
+            for(int wier = sw; wier>=0;wier--)
+            {
+                for (int kolum = sw; kolum >= 0; kolum--)
+                {
+                    if (wier==kolum)
+                    {
+                        u = tab[wier, kolum];
+                        break;
+                    }
+                    else
+                    {
+                        tem += tab[wier, kolum] * tab[wier, sw + 1];
+                    }
+                }
+                
+                tab[wier,sw+1] = (tab[wier, sw+1] - tem) / u;
+                x[wier] = tab[wier,sw + 1];
+                tem = 0;
+            }
+            //Wyswietlanie wyniku
+            richTextBox1.AppendText(Environment.NewLine);
+            richTextBox1.AppendText("Rozwiązanie macierzy metodą Gaussa-Jordana :" + Environment.NewLine);
+            for (int i = 0; i < sw+1; i++)
+            {
+                richTextBox1.AppendText("x"+i+1);
+                richTextBox1.AppendText(x[i].ToString() + "\n");
+            }
+        }
+
         }
     }
-}
+
