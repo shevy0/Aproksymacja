@@ -167,17 +167,17 @@ namespace Aproksymacja
             }
             // Kuba - rozwiązanie układu równań metodą Jordana - Gaussa
 
-            for(int p = 0; p <= sw; p++)
+            for(int p = 0; p < sw+1; p++)
             {
-                for (int wier = 0; wier <= sw; wier++)
+                for (int wier = p+1; wier < sw+1; wier++)
                 {
                     double m = tab[wier, p] / tab[p, p];
-                    for (int kolum = 0; kolum <= sw; wier++)
+                    for (int kolum = 0; kolum < sw+1; kolum++)
                     {
                         //działanie na wszystkich komórkach z wiersza
                         tab[wier, kolum] = tab[wier, kolum] - (m * tab[p, kolum]);
                     }
-                    tab[wier, sw + 1] = tab[wier, sw + 1] - (m * tarr[p]);
+                    tab[wier, sw + 1] = tab[wier, sw + 1] - (m * tab[p,sw+1]);
                 }
             }
 
@@ -197,7 +197,7 @@ namespace Aproksymacja
                     }
                     else
                     {
-                        tem += tab[wier, kolum] * tab[wier, sw + 1];
+                        tem += tab[wier, kolum] * tab[kolum, sw + 1];
                     }
                 }
                 
@@ -211,7 +211,7 @@ namespace Aproksymacja
             for (int i = 0; i < sw+1; i++)
             {
                 richTextBox1.AppendText("x"+i+1);
-                richTextBox1.AppendText(x[i].ToString() + "\n");
+                richTextBox1.AppendText(": "+x[i].ToString() + "\n");
             }
         }
 
