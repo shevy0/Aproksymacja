@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.button_addpoint = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.numeric_lp = new System.Windows.Forms.NumericUpDown();
@@ -42,8 +45,10 @@
             this.numeric_sw = new System.Windows.Forms.NumericUpDown();
             this.button_oblicz = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_lp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_sw)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // button_addpoint
@@ -183,11 +188,30 @@
             this.richTextBox1.TabIndex = 13;
             this.richTextBox1.Text = "";
             // 
+            // chart1
+            // 
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.AxisY.MajorGrid.Enabled = false;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(578, 35);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(394, 306);
+            this.chart1.TabIndex = 14;
+            this.chart1.Text = "chart1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 468);
+            this.ClientSize = new System.Drawing.Size(1017, 371);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button_oblicz);
             this.Controls.Add(this.numeric_sw);
@@ -208,6 +232,7 @@
             this.Text = "Aproksymacja zbioru punktów wielomianem";
             ((System.ComponentModel.ISupportInitialize)(this.numeric_lp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_sw)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,6 +254,7 @@
         private System.Windows.Forms.NumericUpDown numeric_sw;
         private System.Windows.Forms.Button button_oblicz;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
 
