@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -156,9 +156,9 @@ namespace Aproksymacja
             {
                 for (int k = 0; k <= this.sw; k++)
                 {
-                    tab[i, k] = sarr[k+i];
+                    tab[i, k] = sarr[k + i];
                 }
-                tab[i, this.sw+1] = tarr[i];
+                tab[i, this.sw + 1] = tarr[i];
             }
             richTextBox1.AppendText(Environment.NewLine);
             richTextBox1.AppendText("Macierz:" + Environment.NewLine);
@@ -166,36 +166,36 @@ namespace Aproksymacja
             {
                 for (int j = 0; j <= this.sw + 1; j++)
                 {
-                    richTextBox1.AppendText(tab[i, j].ToString()+ "\t");
+                    richTextBox1.AppendText(tab[i, j].ToString() + "\t");
                 }
                 richTextBox1.AppendText(Environment.NewLine);
             }
             // Kuba - rozwiązanie układu równań metodą Jordana - Gaussa
 
-            for(int p = 0; p < this.sw+1; p++)
+            for (int p = 0; p < this.sw + 1; p++)
             {
-                for (int wier = p+1; wier < this.sw+1; wier++)
+                for (int wier = p + 1; wier < this.sw + 1; wier++)
                 {
                     double m = tab[wier, p] / tab[p, p];
-                    for (int kolum = 0; kolum < this.sw+1; kolum++)
+                    for (int kolum = 0; kolum < this.sw + 1; kolum++)
                     {
                         //działanie na wszystkich komórkach z wiersza
                         tab[wier, kolum] = tab[wier, kolum] - (m * tab[p, kolum]);
                     }
-                    tab[wier, this.sw + 1] = tab[wier, this.sw + 1] - (m * tab[p,this.sw+1]);
+                    tab[wier, this.sw + 1] = tab[wier, this.sw + 1] - (m * tab[p, this.sw + 1]);
                 }
             }
 
             //eliminacja
             double tem = 0; //tymczasowe
             double u = 0; // nieznane
-            this.wspl = new double[this.sw+1]; //tablica z wynikami metody gauassa (czyli x1, x2, x3)
+            this.wspl = new double[this.sw + 1]; //tablica z wynikami metody gauassa (czyli x1, x2, x3)
 
-            for(int wier = this.sw; wier>=0;wier--)
+            for (int wier = this.sw; wier >= 0; wier--)
             {
                 for (int kolum = this.sw; kolum >= 0; kolum--)
                 {
-                    if (wier==kolum)
+                    if (wier == kolum)
                     {
                         u = tab[wier, kolum];
                         break;
@@ -205,85 +205,63 @@ namespace Aproksymacja
                         tem += tab[wier, kolum] * tab[kolum, this.sw + 1];
                     }
                 }
-                
-                tab[wier,this.sw+1] = (tab[wier, this.sw+1] - tem) / u;
-                this.wspl[wier] = tab[wier,this.sw + 1];
+
+                tab[wier, this.sw + 1] = (tab[wier, this.sw + 1] - tem) / u;
+                this.wspl[wier] = tab[wier, this.sw + 1];
                 tem = 0;
             }
             //Wyswietlanie wyniku
             richTextBox1.AppendText(Environment.NewLine);
             richTextBox1.AppendText("Rozwiązanie macierzy metodą Gaussa-Jordana :" + Environment.NewLine);
-            for (int i = 0; i < this.sw+1; i++)
+            for (int i = 0; i < this.sw + 1; i++)
             {
-                richTextBox1.AppendText("x"+i+1);
-                richTextBox1.AppendText(": "+ this.wspl[i].ToString() + "\n");
+                richTextBox1.AppendText("x" + i + 1);
+                richTextBox1.AppendText(": " + this.wspl[i].ToString() + "\n");
             }
 
             //Marcin - rysowanie wykresu
             string formula = this._generateFormula();
 
-            chart1.Series.Add("P(x, y)");
-            chart1.Series["P(x, y)"].ChartType = SeriesChartType.Point;
-            chart1.Series["P(x, y)"].Color = Color.Blue;
-            chart1.Series.Add("F(x)");
-            chart1.Series["F(x)"].ChartType = SeriesChartType.Spline;
-            chart1.Series["F(x)"].Color = Color.Red;
+            chart1.Series.Clear();
+            Series ser1 = chart1.Series.Add("P(x, y)");
+            Series ser2 = chart1.Series.Add("F(x)");
+
+            ser1.ChartArea = chart1.ChartAreas[0].Name;
+            ser1.Name = "P(x, y)";
+            ser1.ChartType = SeriesChartType.Point;
+            ser1.Color = Color.Blue;
+
+            ser2.ChartArea = chart1.ChartAreas[0].Name;
+            ser2.Name = "F(x)";
+            ser2.ChartType = SeriesChartType.Line;
+            ser2.Color = Color.Red;
+
             foreach (var point in this.chartPoints)
             {
-                chart1.Series["P(x, y)"].Points.AddXY(point[0], point[1]);
+                ser1.Points.AddXY(point[0], point[1]);
             }
 
-            /*for(int i = 0;i< this.chartPoints.Count; i++)
+            for (int i = 0; i < this.chartPoints.Count; i++)
             {
                 mathFormula = formula.Replace("x", this.chartPoints[i][0].ToString());
                 mathFormula.Replace(",", ".");
                 Expression e1 = new Expression(mathFormula);
-                MessageBox.Show(e1.getExpressionString());
-                chart1.Series["F(x)"].Points.AddXY(Convert.ToDecimal(this.chartPoints[i][0]), e1.calculate());
-                MessageBox.Show(e1.calculate().ToString());
+                ser2.Points.AddXY(Convert.ToDecimal(this.chartPoints[i][0]), e1.calculate());
                 mathFormula = "";
-
-            }*/
-
-            /* for (int i = 0; i < this.chartPoints.Count; i++)
-             {
-                 string p = "x=";
-                 p += Convert.ToString(this.chartPoints[i][0]);
-                 Argument x = new Argument(p);
-                 MessageBox.Show(x.ToString());
-                 Expression e1 = new Expression(formula, x);
-                 MessageBox.Show(e1.getExpressionString());
-                 double v = e1.calculate();
-                 chart1.Series["F(x)"].Points.AddXY(Convert.ToDecimal(this.chartPoints[i][0]), v);
-             }*/
-
-            for(int i = 0;i < this.lp; i++)
-            {
-                mathFormula = formula.Replace("x", this.chartPoints[i][0].ToString());
-                Argument x = new Argument(mathFormula);
-                Expression e1 = new Expression(mathFormula, x);
-                MessageBox.Show(e1.getExpressionString());
-                double wykres = e1.calculate();
-                chart1.Series["F(x)"].Points.AddXY(Convert.ToDecimal(this.chartPoints[i][0]), wykres);
-                //MessageBox.Show(e1.calculate().ToString());
-                mathFormula = "";
-
             }
-
-            MessageBox.Show(formula);
         }
 
         private string _generateFormula()
         {
             string formula = "";
 
-            if(this.sw == 0)
+            if (this.sw == 0)
             {
                 return this.wspl[0].ToString();
             }
-            for(int i = 0; i<=this.sw; i++)
+            for (int i = 0; i <= this.sw; i++)
             {
-                formula += "("+this.wspl[i] + "*x^" + i + ")+";
+                formula += "(" + this.wspl[i] + "*x^" + i + ")+";
             }
             formula = formula.Remove(formula.Length - 1);
             return formula;
