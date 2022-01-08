@@ -59,5 +59,106 @@ namespace Aproksymacja.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aproksymacja_logo {
+            get {
+                object obj = ResourceManager.GetObject("aproksymacja-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calculator_8_128 {
+            get {
+                object obj = ResourceManager.GetObject("calculator-8-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kindpng_723938 {
+            get {
+                object obj = ResourceManager.GetObject("kindpng_723938", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NicePng_close_button_png_521935 {
+            get {
+                object obj = ResourceManager.GetObject("NicePng_close-button-png_521935", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ok_128 {
+            get {
+                object obj = ResourceManager.GetObject("ok-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_7_128 {
+            get {
+                object obj = ResourceManager.GetObject("plus-7-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PngItem_1280311 {
+            get {
+                object obj = ResourceManager.GetObject("PngItem_1280311", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap restart_icon_18_128 {
+            get {
+                object obj = ResourceManager.GetObject("restart-icon-18-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view_details_128 {
+            get {
+                object obj = ResourceManager.GetObject("view-details-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap white_arrow_right_3_icon_free_white_arrow_icons_arrow_white_icon_symbol_tape_sign_star_symbol_transparent_png_2534326__1_ {
+            get {
+                object obj = ResourceManager.GetObject("white-arrow-right-3-icon-free-white-arrow-icons-arrow-white-icon-symbol-tape-sign" +
+                        "-star-symbol-transparent-png-2534326 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
