@@ -54,6 +54,8 @@ namespace Aproksymacja
                 this.temp = 0;
                 richTextBox.Text = "";
                 this.chartPoints.Clear();
+                richTextBox1.Text = "";
+                numeric_sw.Value = 0;
             }
         }
 
@@ -61,7 +63,7 @@ namespace Aproksymacja
         {
             if (textBox_X.Text == "" || textBox_Y.Text == "")
             {
-                MessageBox.Show("e dudus wprowadz X i Y");
+                MessageBox.Show("Nie wprowadziłeś wartości X i Y!");
             }
             else
             {
@@ -86,7 +88,7 @@ namespace Aproksymacja
         {
             if (!Regex.Match(textBox_X.Text, @"^*[0-9\.]+$").Success)
             {
-                MessageBox.Show("Nieprawidłowa wartość!");
+                MessageBox.Show("Nieprawidłowa wartość! Podaj wartość X");
                 textBox_X.Focus();
                 return;
             }
@@ -96,7 +98,7 @@ namespace Aproksymacja
         {
             if (!Regex.Match(textBox_Y.Text, @"^*[0-9\.]+$").Success)
             {
-                MessageBox.Show("Nieprawidłowa wartość!");
+                MessageBox.Show("Nieprawidłowa wartość! Podaj wartość Y");
                 textBox_Y.Focus();
                 return;
             }
@@ -229,7 +231,7 @@ namespace Aproksymacja
             ser1.ChartArea = chart1.ChartAreas[0].Name;
             ser1.Name = "P(x, y)";
             ser1.ChartType = SeriesChartType.Point;
-            ser1.Color = Color.Blue;
+            ser1.Color = Color.FromArgb(0, 102, 204);
 
             ser2.ChartArea = chart1.ChartAreas[0].Name;
             ser2.Name = "F(x)";
@@ -267,5 +269,29 @@ namespace Aproksymacja
             return formula;
         }
 
+        private void dane_button_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.SelectedTab = dane_page;
+        }
+
+        private void wykresy_button_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.SelectedTab = wykres_page;
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void autorzy_button_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.SelectedTab = autorzy_page;
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/shevy0/Aproksymacja");
+        }
     }
 }
