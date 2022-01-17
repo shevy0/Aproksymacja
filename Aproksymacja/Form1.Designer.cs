@@ -32,6 +32,9 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -39,9 +42,6 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.label1 = new System.Windows.Forms.Label();
             this.numeric_lp = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,35 +55,35 @@
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuPages1 = new Bunifu.UI.WinForms.BunifuPages();
-            this.dane_page = new System.Windows.Forms.TabPage();
-            this.wykres_page = new System.Windows.Forms.TabPage();
-            this.autorzy_page = new System.Windows.Forms.TabPage();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button_oblicz = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.button_addpoint = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.button_lp_reset = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.button_lp_accept = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.autorzy_button = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.wykresy_button = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.dane_button = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.bunifuPages1 = new Bunifu.UI.WinForms.BunifuPages();
+            this.dane_page = new System.Windows.Forms.TabPage();
+            this.button_oblicz = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.button_addpoint = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.button_lp_reset = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.button_lp_accept = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.wykres_page = new System.Windows.Forms.TabPage();
+            this.autorzy_page = new System.Windows.Forms.TabPage();
+            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numeric_lp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_sw)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuPages1.SuspendLayout();
             this.dane_page.SuspendLayout();
             this.wykres_page.SuspendLayout();
             this.autorzy_page.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -93,7 +93,7 @@
             this.label1.Location = new System.Drawing.Point(51, 39);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 23);
+            this.label1.Size = new System.Drawing.Size(107, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "Liczba punktów:";
             // 
@@ -109,7 +109,7 @@
             0,
             0});
             this.numeric_lp.Name = "numeric_lp";
-            this.numeric_lp.Size = new System.Drawing.Size(124, 30);
+            this.numeric_lp.Size = new System.Drawing.Size(124, 26);
             this.numeric_lp.TabIndex = 2;
             this.numeric_lp.Value = new decimal(new int[] {
             1,
@@ -122,7 +122,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(47, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 23);
+            this.label2.Size = new System.Drawing.Size(89, 19);
             this.label2.TabIndex = 3;
             this.label2.Text = "Wprowadź X:";
             // 
@@ -132,7 +132,7 @@
             this.textBox_X.ForeColor = System.Drawing.Color.White;
             this.textBox_X.Location = new System.Drawing.Point(163, 91);
             this.textBox_X.Name = "textBox_X";
-            this.textBox_X.Size = new System.Drawing.Size(124, 30);
+            this.textBox_X.Size = new System.Drawing.Size(124, 26);
             this.textBox_X.TabIndex = 4;
             this.textBox_X.Leave += new System.EventHandler(this.textBox_X_Leave);
             // 
@@ -141,7 +141,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(380, 94);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 23);
+            this.label3.Size = new System.Drawing.Size(89, 19);
             this.label3.TabIndex = 5;
             this.label3.Text = "Wprowadź Y:";
             // 
@@ -151,7 +151,7 @@
             this.textBox_Y.ForeColor = System.Drawing.Color.White;
             this.textBox_Y.Location = new System.Drawing.Point(495, 91);
             this.textBox_Y.Name = "textBox_Y";
-            this.textBox_Y.Size = new System.Drawing.Size(127, 30);
+            this.textBox_Y.Size = new System.Drawing.Size(127, 26);
             this.textBox_Y.TabIndex = 6;
             this.textBox_Y.Leave += new System.EventHandler(this.textBox_Y_Leave);
             // 
@@ -170,7 +170,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(47, 363);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(163, 23);
+            this.label4.Size = new System.Drawing.Size(131, 19);
             this.label4.TabIndex = 10;
             this.label4.Text = "Stopień wielomianu:";
             // 
@@ -180,7 +180,7 @@
             this.numeric_sw.ForeColor = System.Drawing.Color.White;
             this.numeric_sw.Location = new System.Drawing.Point(235, 361);
             this.numeric_sw.Name = "numeric_sw";
-            this.numeric_sw.Size = new System.Drawing.Size(124, 30);
+            this.numeric_sw.Size = new System.Drawing.Size(124, 26);
             this.numeric_sw.TabIndex = 11;
             // 
             // richTextBox1
@@ -244,6 +244,41 @@
             this.panel2.Size = new System.Drawing.Size(900, 34);
             this.panel2.TabIndex = 16;
             // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.ActiveImage = null;
+            this.bunifuImageButton1.AllowAnimations = true;
+            this.bunifuImageButton1.AllowBuffering = false;
+            this.bunifuImageButton1.AllowToggling = false;
+            this.bunifuImageButton1.AllowZooming = true;
+            this.bunifuImageButton1.AllowZoomingOnFocus = false;
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.bunifuImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ErrorImage")));
+            this.bunifuImageButton1.FadeWhenInactive = false;
+            this.bunifuImageButton1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.bunifuImageButton1.Image = global::Aproksymacja.Properties.Resources.NicePng_close_button_png_521935;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.ImageLocation = null;
+            this.bunifuImageButton1.ImageMargin = 0;
+            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(19, 19);
+            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(20, 20);
+            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
+            this.bunifuImageButton1.Location = new System.Drawing.Point(861, 7);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Rotation = 0;
+            this.bunifuImageButton1.ShowActiveImage = true;
+            this.bunifuImageButton1.ShowCursorChanges = true;
+            this.bunifuImageButton1.ShowImageBorders = true;
+            this.bunifuImageButton1.ShowSizeMarkers = false;
+            this.bunifuImageButton1.Size = new System.Drawing.Size(20, 20);
+            this.bunifuImageButton1.TabIndex = 18;
+            this.bunifuImageButton1.ToolTipText = "";
+            this.bunifuImageButton1.WaitOnLoad = false;
+            this.bunifuImageButton1.Zoom = 0;
+            this.bunifuImageButton1.ZoomSpeed = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -256,6 +291,285 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 507);
             this.panel1.TabIndex = 17;
+            // 
+            // autorzy_button
+            // 
+            this.autorzy_button.AllowAnimations = true;
+            this.autorzy_button.AllowMouseEffects = true;
+            this.autorzy_button.AllowToggling = false;
+            this.autorzy_button.AnimationSpeed = 200;
+            this.autorzy_button.AutoGenerateColors = false;
+            this.autorzy_button.AutoRoundBorders = false;
+            this.autorzy_button.AutoSizeLeftIcon = true;
+            this.autorzy_button.AutoSizeRightIcon = true;
+            this.autorzy_button.BackColor = System.Drawing.Color.Transparent;
+            this.autorzy_button.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.autorzy_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("autorzy_button.BackgroundImage")));
+            this.autorzy_button.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.autorzy_button.ButtonText = "Autorzy";
+            this.autorzy_button.ButtonTextMarginLeft = 0;
+            this.autorzy_button.ColorContrastOnClick = 45;
+            this.autorzy_button.ColorContrastOnHover = 45;
+            this.autorzy_button.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.autorzy_button.CustomizableEdges = borderEdges6;
+            this.autorzy_button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.autorzy_button.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.autorzy_button.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.autorzy_button.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.autorzy_button.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.autorzy_button.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.autorzy_button.ForeColor = System.Drawing.Color.White;
+            this.autorzy_button.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.autorzy_button.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.autorzy_button.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.autorzy_button.IconMarginLeft = 11;
+            this.autorzy_button.IconPadding = 10;
+            this.autorzy_button.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.autorzy_button.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.autorzy_button.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.autorzy_button.IconSize = 25;
+            this.autorzy_button.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.autorzy_button.IdleBorderRadius = 1;
+            this.autorzy_button.IdleBorderThickness = 1;
+            this.autorzy_button.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.autorzy_button.IdleIconLeftImage = global::Aproksymacja.Properties.Resources.white_arrow_right_3_icon_free_white_arrow_icons_arrow_white_icon_symbol_tape_sign_star_symbol_transparent_png_2534326__1_;
+            this.autorzy_button.IdleIconRightImage = null;
+            this.autorzy_button.IndicateFocus = false;
+            this.autorzy_button.Location = new System.Drawing.Point(0, 239);
+            this.autorzy_button.Name = "autorzy_button";
+            this.autorzy_button.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.autorzy_button.OnDisabledState.BorderRadius = 1;
+            this.autorzy_button.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.autorzy_button.OnDisabledState.BorderThickness = 1;
+            this.autorzy_button.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.autorzy_button.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.autorzy_button.OnDisabledState.IconLeftImage = null;
+            this.autorzy_button.OnDisabledState.IconRightImage = null;
+            this.autorzy_button.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.autorzy_button.onHoverState.BorderRadius = 1;
+            this.autorzy_button.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.autorzy_button.onHoverState.BorderThickness = 1;
+            this.autorzy_button.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.autorzy_button.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.autorzy_button.onHoverState.IconLeftImage = null;
+            this.autorzy_button.onHoverState.IconRightImage = null;
+            this.autorzy_button.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.autorzy_button.OnIdleState.BorderRadius = 1;
+            this.autorzy_button.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.autorzy_button.OnIdleState.BorderThickness = 1;
+            this.autorzy_button.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.autorzy_button.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.autorzy_button.OnIdleState.IconLeftImage = global::Aproksymacja.Properties.Resources.white_arrow_right_3_icon_free_white_arrow_icons_arrow_white_icon_symbol_tape_sign_star_symbol_transparent_png_2534326__1_;
+            this.autorzy_button.OnIdleState.IconRightImage = null;
+            this.autorzy_button.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.autorzy_button.OnPressedState.BorderRadius = 1;
+            this.autorzy_button.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.autorzy_button.OnPressedState.BorderThickness = 1;
+            this.autorzy_button.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.autorzy_button.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.autorzy_button.OnPressedState.IconLeftImage = null;
+            this.autorzy_button.OnPressedState.IconRightImage = null;
+            this.autorzy_button.Size = new System.Drawing.Size(200, 39);
+            this.autorzy_button.TabIndex = 20;
+            this.autorzy_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.autorzy_button.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.autorzy_button.TextMarginLeft = 0;
+            this.autorzy_button.TextPadding = new System.Windows.Forms.Padding(0);
+            this.autorzy_button.UseDefaultRadiusAndThickness = true;
+            this.autorzy_button.Click += new System.EventHandler(this.autorzy_button_Click);
+            // 
+            // wykresy_button
+            // 
+            this.wykresy_button.AllowAnimations = true;
+            this.wykresy_button.AllowMouseEffects = true;
+            this.wykresy_button.AllowToggling = false;
+            this.wykresy_button.AnimationSpeed = 200;
+            this.wykresy_button.AutoGenerateColors = false;
+            this.wykresy_button.AutoRoundBorders = false;
+            this.wykresy_button.AutoSizeLeftIcon = true;
+            this.wykresy_button.AutoSizeRightIcon = true;
+            this.wykresy_button.BackColor = System.Drawing.Color.Transparent;
+            this.wykresy_button.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.wykresy_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("wykresy_button.BackgroundImage")));
+            this.wykresy_button.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.wykresy_button.ButtonText = "Wykresy";
+            this.wykresy_button.ButtonTextMarginLeft = 0;
+            this.wykresy_button.ColorContrastOnClick = 45;
+            this.wykresy_button.ColorContrastOnHover = 45;
+            this.wykresy_button.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.wykresy_button.CustomizableEdges = borderEdges7;
+            this.wykresy_button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.wykresy_button.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.wykresy_button.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.wykresy_button.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.wykresy_button.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.wykresy_button.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.wykresy_button.ForeColor = System.Drawing.Color.White;
+            this.wykresy_button.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.wykresy_button.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.wykresy_button.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.wykresy_button.IconMarginLeft = 11;
+            this.wykresy_button.IconPadding = 10;
+            this.wykresy_button.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.wykresy_button.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.wykresy_button.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.wykresy_button.IconSize = 25;
+            this.wykresy_button.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.wykresy_button.IdleBorderRadius = 1;
+            this.wykresy_button.IdleBorderThickness = 1;
+            this.wykresy_button.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.wykresy_button.IdleIconLeftImage = global::Aproksymacja.Properties.Resources.kindpng_723938;
+            this.wykresy_button.IdleIconRightImage = null;
+            this.wykresy_button.IndicateFocus = false;
+            this.wykresy_button.Location = new System.Drawing.Point(0, 180);
+            this.wykresy_button.Name = "wykresy_button";
+            this.wykresy_button.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.wykresy_button.OnDisabledState.BorderRadius = 1;
+            this.wykresy_button.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.wykresy_button.OnDisabledState.BorderThickness = 1;
+            this.wykresy_button.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.wykresy_button.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.wykresy_button.OnDisabledState.IconLeftImage = null;
+            this.wykresy_button.OnDisabledState.IconRightImage = null;
+            this.wykresy_button.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.wykresy_button.onHoverState.BorderRadius = 1;
+            this.wykresy_button.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.wykresy_button.onHoverState.BorderThickness = 1;
+            this.wykresy_button.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.wykresy_button.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.wykresy_button.onHoverState.IconLeftImage = null;
+            this.wykresy_button.onHoverState.IconRightImage = null;
+            this.wykresy_button.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.wykresy_button.OnIdleState.BorderRadius = 1;
+            this.wykresy_button.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.wykresy_button.OnIdleState.BorderThickness = 1;
+            this.wykresy_button.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.wykresy_button.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.wykresy_button.OnIdleState.IconLeftImage = global::Aproksymacja.Properties.Resources.kindpng_723938;
+            this.wykresy_button.OnIdleState.IconRightImage = null;
+            this.wykresy_button.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.wykresy_button.OnPressedState.BorderRadius = 1;
+            this.wykresy_button.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.wykresy_button.OnPressedState.BorderThickness = 1;
+            this.wykresy_button.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.wykresy_button.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.wykresy_button.OnPressedState.IconLeftImage = null;
+            this.wykresy_button.OnPressedState.IconRightImage = null;
+            this.wykresy_button.Size = new System.Drawing.Size(200, 39);
+            this.wykresy_button.TabIndex = 19;
+            this.wykresy_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.wykresy_button.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.wykresy_button.TextMarginLeft = 0;
+            this.wykresy_button.TextPadding = new System.Windows.Forms.Padding(0);
+            this.wykresy_button.UseDefaultRadiusAndThickness = true;
+            this.wykresy_button.Click += new System.EventHandler(this.wykresy_button_Click);
+            // 
+            // dane_button
+            // 
+            this.dane_button.AllowAnimations = true;
+            this.dane_button.AllowMouseEffects = true;
+            this.dane_button.AllowToggling = false;
+            this.dane_button.AnimationSpeed = 200;
+            this.dane_button.AutoGenerateColors = false;
+            this.dane_button.AutoRoundBorders = false;
+            this.dane_button.AutoSizeLeftIcon = true;
+            this.dane_button.AutoSizeRightIcon = true;
+            this.dane_button.BackColor = System.Drawing.Color.Transparent;
+            this.dane_button.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.dane_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("dane_button.BackgroundImage")));
+            this.dane_button.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.dane_button.ButtonText = "Dane";
+            this.dane_button.ButtonTextMarginLeft = 0;
+            this.dane_button.ColorContrastOnClick = 45;
+            this.dane_button.ColorContrastOnHover = 45;
+            this.dane_button.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.dane_button.CustomizableEdges = borderEdges8;
+            this.dane_button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.dane_button.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.dane_button.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.dane_button.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.dane_button.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.dane_button.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dane_button.ForeColor = System.Drawing.Color.White;
+            this.dane_button.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dane_button.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.dane_button.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.dane_button.IconMarginLeft = 11;
+            this.dane_button.IconPadding = 10;
+            this.dane_button.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.dane_button.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.dane_button.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.dane_button.IconSize = 25;
+            this.dane_button.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.dane_button.IdleBorderRadius = 1;
+            this.dane_button.IdleBorderThickness = 1;
+            this.dane_button.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.dane_button.IdleIconLeftImage = global::Aproksymacja.Properties.Resources.view_details_128;
+            this.dane_button.IdleIconRightImage = null;
+            this.dane_button.IndicateFocus = false;
+            this.dane_button.Location = new System.Drawing.Point(0, 124);
+            this.dane_button.Name = "dane_button";
+            this.dane_button.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.dane_button.OnDisabledState.BorderRadius = 1;
+            this.dane_button.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.dane_button.OnDisabledState.BorderThickness = 1;
+            this.dane_button.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.dane_button.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.dane_button.OnDisabledState.IconLeftImage = null;
+            this.dane_button.OnDisabledState.IconRightImage = null;
+            this.dane_button.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.dane_button.onHoverState.BorderRadius = 1;
+            this.dane_button.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.dane_button.onHoverState.BorderThickness = 1;
+            this.dane_button.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.dane_button.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.dane_button.onHoverState.IconLeftImage = null;
+            this.dane_button.onHoverState.IconRightImage = null;
+            this.dane_button.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.dane_button.OnIdleState.BorderRadius = 1;
+            this.dane_button.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.dane_button.OnIdleState.BorderThickness = 1;
+            this.dane_button.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.dane_button.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.dane_button.OnIdleState.IconLeftImage = global::Aproksymacja.Properties.Resources.view_details_128;
+            this.dane_button.OnIdleState.IconRightImage = null;
+            this.dane_button.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.dane_button.OnPressedState.BorderRadius = 1;
+            this.dane_button.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.dane_button.OnPressedState.BorderThickness = 1;
+            this.dane_button.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.dane_button.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.dane_button.OnPressedState.IconLeftImage = null;
+            this.dane_button.OnPressedState.IconRightImage = null;
+            this.dane_button.Size = new System.Drawing.Size(200, 39);
+            this.dane_button.TabIndex = 18;
+            this.dane_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dane_button.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dane_button.TextMarginLeft = 0;
+            this.dane_button.TextPadding = new System.Windows.Forms.Padding(0);
+            this.dane_button.UseDefaultRadiusAndThickness = true;
+            this.dane_button.Click += new System.EventHandler(this.dane_button_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Aproksymacja.Properties.Resources.aproksymacja_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(188, 71);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // bunifuPages1
             // 
@@ -312,62 +626,9 @@
             this.dane_page.Location = new System.Drawing.Point(4, 4);
             this.dane_page.Name = "dane_page";
             this.dane_page.Padding = new System.Windows.Forms.Padding(3);
-            this.dane_page.Size = new System.Drawing.Size(659, 446);
+            this.dane_page.Size = new System.Drawing.Size(659, 456);
             this.dane_page.TabIndex = 0;
             this.dane_page.Text = "tabPage1";
-            // 
-            // wykres_page
-            // 
-            this.wykres_page.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.wykres_page.Controls.Add(this.chart1);
-            this.wykres_page.Location = new System.Drawing.Point(4, 4);
-            this.wykres_page.Name = "wykres_page";
-            this.wykres_page.Padding = new System.Windows.Forms.Padding(3);
-            this.wykres_page.Size = new System.Drawing.Size(659, 446);
-            this.wykres_page.TabIndex = 1;
-            this.wykres_page.Text = "tabPage2";
-            // 
-            // autorzy_page
-            // 
-            this.autorzy_page.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.autorzy_page.Controls.Add(this.bunifuButton1);
-            this.autorzy_page.Controls.Add(this.label7);
-            this.autorzy_page.Controls.Add(this.label6);
-            this.autorzy_page.Controls.Add(this.label5);
-            this.autorzy_page.Location = new System.Drawing.Point(4, 4);
-            this.autorzy_page.Name = "autorzy_page";
-            this.autorzy_page.Size = new System.Drawing.Size(659, 446);
-            this.autorzy_page.TabIndex = 2;
-            this.autorzy_page.Text = "tabPage1";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(300, 15);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 23);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Autorzy";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(251, 75);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(171, 184);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "➡ Kacper Milczyński\r\n➡ Grzegorz Czarny\r\n➡ Adam Stoiński\r\n➡ Kuba Sarzała\r\n➡ Marcin" +
-    " Sztajnke\r\n\r\n\r\n\r\n";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(67, 220);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(533, 92);
-            this.label7.TabIndex = 2;
-            this.label7.Text = resources.GetString("label7.Text");
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button_oblicz
             // 
@@ -729,6 +990,30 @@
             this.button_lp_accept.UseDefaultRadiusAndThickness = true;
             this.button_lp_accept.Click += new System.EventHandler(this.button_lp_accept_Click);
             // 
+            // wykres_page
+            // 
+            this.wykres_page.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.wykres_page.Controls.Add(this.chart1);
+            this.wykres_page.Location = new System.Drawing.Point(4, 4);
+            this.wykres_page.Name = "wykres_page";
+            this.wykres_page.Padding = new System.Windows.Forms.Padding(3);
+            this.wykres_page.Size = new System.Drawing.Size(659, 450);
+            this.wykres_page.TabIndex = 1;
+            this.wykres_page.Text = "tabPage2";
+            // 
+            // autorzy_page
+            // 
+            this.autorzy_page.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.autorzy_page.Controls.Add(this.bunifuButton1);
+            this.autorzy_page.Controls.Add(this.label7);
+            this.autorzy_page.Controls.Add(this.label6);
+            this.autorzy_page.Controls.Add(this.label5);
+            this.autorzy_page.Location = new System.Drawing.Point(4, 4);
+            this.autorzy_page.Name = "autorzy_page";
+            this.autorzy_page.Size = new System.Drawing.Size(659, 456);
+            this.autorzy_page.TabIndex = 2;
+            this.autorzy_page.Text = "tabPage1";
+            // 
             // bunifuButton1
             // 
             this.bunifuButton1.AllowAnimations = true;
@@ -819,319 +1104,34 @@
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
-            // autorzy_button
+            // label7
             // 
-            this.autorzy_button.AllowAnimations = true;
-            this.autorzy_button.AllowMouseEffects = true;
-            this.autorzy_button.AllowToggling = false;
-            this.autorzy_button.AnimationSpeed = 200;
-            this.autorzy_button.AutoGenerateColors = false;
-            this.autorzy_button.AutoRoundBorders = false;
-            this.autorzy_button.AutoSizeLeftIcon = true;
-            this.autorzy_button.AutoSizeRightIcon = true;
-            this.autorzy_button.BackColor = System.Drawing.Color.Transparent;
-            this.autorzy_button.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.autorzy_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("autorzy_button.BackgroundImage")));
-            this.autorzy_button.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.autorzy_button.ButtonText = "Autorzy";
-            this.autorzy_button.ButtonTextMarginLeft = 0;
-            this.autorzy_button.ColorContrastOnClick = 45;
-            this.autorzy_button.ColorContrastOnHover = 45;
-            this.autorzy_button.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.autorzy_button.CustomizableEdges = borderEdges6;
-            this.autorzy_button.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.autorzy_button.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.autorzy_button.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.autorzy_button.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.autorzy_button.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.autorzy_button.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.autorzy_button.ForeColor = System.Drawing.Color.White;
-            this.autorzy_button.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.autorzy_button.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.autorzy_button.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.autorzy_button.IconMarginLeft = 11;
-            this.autorzy_button.IconPadding = 10;
-            this.autorzy_button.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.autorzy_button.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.autorzy_button.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.autorzy_button.IconSize = 25;
-            this.autorzy_button.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.autorzy_button.IdleBorderRadius = 1;
-            this.autorzy_button.IdleBorderThickness = 1;
-            this.autorzy_button.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.autorzy_button.IdleIconLeftImage = global::Aproksymacja.Properties.Resources.white_arrow_right_3_icon_free_white_arrow_icons_arrow_white_icon_symbol_tape_sign_star_symbol_transparent_png_2534326__1_;
-            this.autorzy_button.IdleIconRightImage = null;
-            this.autorzy_button.IndicateFocus = false;
-            this.autorzy_button.Location = new System.Drawing.Point(0, 239);
-            this.autorzy_button.Name = "autorzy_button";
-            this.autorzy_button.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.autorzy_button.OnDisabledState.BorderRadius = 1;
-            this.autorzy_button.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.autorzy_button.OnDisabledState.BorderThickness = 1;
-            this.autorzy_button.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.autorzy_button.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.autorzy_button.OnDisabledState.IconLeftImage = null;
-            this.autorzy_button.OnDisabledState.IconRightImage = null;
-            this.autorzy_button.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.autorzy_button.onHoverState.BorderRadius = 1;
-            this.autorzy_button.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.autorzy_button.onHoverState.BorderThickness = 1;
-            this.autorzy_button.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.autorzy_button.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.autorzy_button.onHoverState.IconLeftImage = null;
-            this.autorzy_button.onHoverState.IconRightImage = null;
-            this.autorzy_button.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.autorzy_button.OnIdleState.BorderRadius = 1;
-            this.autorzy_button.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.autorzy_button.OnIdleState.BorderThickness = 1;
-            this.autorzy_button.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.autorzy_button.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.autorzy_button.OnIdleState.IconLeftImage = global::Aproksymacja.Properties.Resources.white_arrow_right_3_icon_free_white_arrow_icons_arrow_white_icon_symbol_tape_sign_star_symbol_transparent_png_2534326__1_;
-            this.autorzy_button.OnIdleState.IconRightImage = null;
-            this.autorzy_button.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.autorzy_button.OnPressedState.BorderRadius = 1;
-            this.autorzy_button.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.autorzy_button.OnPressedState.BorderThickness = 1;
-            this.autorzy_button.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.autorzy_button.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.autorzy_button.OnPressedState.IconLeftImage = null;
-            this.autorzy_button.OnPressedState.IconRightImage = null;
-            this.autorzy_button.Size = new System.Drawing.Size(200, 39);
-            this.autorzy_button.TabIndex = 20;
-            this.autorzy_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.autorzy_button.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.autorzy_button.TextMarginLeft = 0;
-            this.autorzy_button.TextPadding = new System.Windows.Forms.Padding(0);
-            this.autorzy_button.UseDefaultRadiusAndThickness = true;
-            this.autorzy_button.Click += new System.EventHandler(this.autorzy_button_Click);
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(67, 220);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(431, 76);
+            this.label7.TabIndex = 2;
+            this.label7.Text = resources.GetString("label7.Text");
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // wykresy_button
+            // label6
             // 
-            this.wykresy_button.AllowAnimations = true;
-            this.wykresy_button.AllowMouseEffects = true;
-            this.wykresy_button.AllowToggling = false;
-            this.wykresy_button.AnimationSpeed = 200;
-            this.wykresy_button.AutoGenerateColors = false;
-            this.wykresy_button.AutoRoundBorders = false;
-            this.wykresy_button.AutoSizeLeftIcon = true;
-            this.wykresy_button.AutoSizeRightIcon = true;
-            this.wykresy_button.BackColor = System.Drawing.Color.Transparent;
-            this.wykresy_button.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.wykresy_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("wykresy_button.BackgroundImage")));
-            this.wykresy_button.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.wykresy_button.ButtonText = "Wykresy";
-            this.wykresy_button.ButtonTextMarginLeft = 0;
-            this.wykresy_button.ColorContrastOnClick = 45;
-            this.wykresy_button.ColorContrastOnHover = 45;
-            this.wykresy_button.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.wykresy_button.CustomizableEdges = borderEdges7;
-            this.wykresy_button.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.wykresy_button.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.wykresy_button.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.wykresy_button.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.wykresy_button.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.wykresy_button.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.wykresy_button.ForeColor = System.Drawing.Color.White;
-            this.wykresy_button.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.wykresy_button.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.wykresy_button.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.wykresy_button.IconMarginLeft = 11;
-            this.wykresy_button.IconPadding = 10;
-            this.wykresy_button.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.wykresy_button.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.wykresy_button.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.wykresy_button.IconSize = 25;
-            this.wykresy_button.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.wykresy_button.IdleBorderRadius = 1;
-            this.wykresy_button.IdleBorderThickness = 1;
-            this.wykresy_button.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.wykresy_button.IdleIconLeftImage = global::Aproksymacja.Properties.Resources.kindpng_723938;
-            this.wykresy_button.IdleIconRightImage = null;
-            this.wykresy_button.IndicateFocus = false;
-            this.wykresy_button.Location = new System.Drawing.Point(0, 180);
-            this.wykresy_button.Name = "wykresy_button";
-            this.wykresy_button.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.wykresy_button.OnDisabledState.BorderRadius = 1;
-            this.wykresy_button.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.wykresy_button.OnDisabledState.BorderThickness = 1;
-            this.wykresy_button.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.wykresy_button.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.wykresy_button.OnDisabledState.IconLeftImage = null;
-            this.wykresy_button.OnDisabledState.IconRightImage = null;
-            this.wykresy_button.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.wykresy_button.onHoverState.BorderRadius = 1;
-            this.wykresy_button.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.wykresy_button.onHoverState.BorderThickness = 1;
-            this.wykresy_button.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.wykresy_button.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.wykresy_button.onHoverState.IconLeftImage = null;
-            this.wykresy_button.onHoverState.IconRightImage = null;
-            this.wykresy_button.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.wykresy_button.OnIdleState.BorderRadius = 1;
-            this.wykresy_button.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.wykresy_button.OnIdleState.BorderThickness = 1;
-            this.wykresy_button.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.wykresy_button.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.wykresy_button.OnIdleState.IconLeftImage = global::Aproksymacja.Properties.Resources.kindpng_723938;
-            this.wykresy_button.OnIdleState.IconRightImage = null;
-            this.wykresy_button.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.wykresy_button.OnPressedState.BorderRadius = 1;
-            this.wykresy_button.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.wykresy_button.OnPressedState.BorderThickness = 1;
-            this.wykresy_button.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.wykresy_button.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.wykresy_button.OnPressedState.IconLeftImage = null;
-            this.wykresy_button.OnPressedState.IconRightImage = null;
-            this.wykresy_button.Size = new System.Drawing.Size(200, 39);
-            this.wykresy_button.TabIndex = 19;
-            this.wykresy_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.wykresy_button.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.wykresy_button.TextMarginLeft = 0;
-            this.wykresy_button.TextPadding = new System.Windows.Forms.Padding(0);
-            this.wykresy_button.UseDefaultRadiusAndThickness = true;
-            this.wykresy_button.Click += new System.EventHandler(this.wykresy_button_Click);
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(251, 75);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(139, 152);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "➡ Kacper Milczyński\r\n➡ Grzegorz Czarny\r\n➡ Adam Stoiński\r\n➡ Kuba Sarzała\r\n➡ Marcin" +
+    " Sztajnke\r\n\r\n\r\n\r\n";
             // 
-            // dane_button
+            // label5
             // 
-            this.dane_button.AllowAnimations = true;
-            this.dane_button.AllowMouseEffects = true;
-            this.dane_button.AllowToggling = false;
-            this.dane_button.AnimationSpeed = 200;
-            this.dane_button.AutoGenerateColors = false;
-            this.dane_button.AutoRoundBorders = false;
-            this.dane_button.AutoSizeLeftIcon = true;
-            this.dane_button.AutoSizeRightIcon = true;
-            this.dane_button.BackColor = System.Drawing.Color.Transparent;
-            this.dane_button.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.dane_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("dane_button.BackgroundImage")));
-            this.dane_button.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.dane_button.ButtonText = "Dane";
-            this.dane_button.ButtonTextMarginLeft = 0;
-            this.dane_button.ColorContrastOnClick = 45;
-            this.dane_button.ColorContrastOnHover = 45;
-            this.dane_button.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.dane_button.CustomizableEdges = borderEdges8;
-            this.dane_button.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.dane_button.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.dane_button.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.dane_button.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.dane_button.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.dane_button.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dane_button.ForeColor = System.Drawing.Color.White;
-            this.dane_button.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dane_button.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.dane_button.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.dane_button.IconMarginLeft = 11;
-            this.dane_button.IconPadding = 10;
-            this.dane_button.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.dane_button.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.dane_button.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.dane_button.IconSize = 25;
-            this.dane_button.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.dane_button.IdleBorderRadius = 1;
-            this.dane_button.IdleBorderThickness = 1;
-            this.dane_button.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.dane_button.IdleIconLeftImage = global::Aproksymacja.Properties.Resources.view_details_128;
-            this.dane_button.IdleIconRightImage = null;
-            this.dane_button.IndicateFocus = false;
-            this.dane_button.Location = new System.Drawing.Point(0, 124);
-            this.dane_button.Name = "dane_button";
-            this.dane_button.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.dane_button.OnDisabledState.BorderRadius = 1;
-            this.dane_button.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.dane_button.OnDisabledState.BorderThickness = 1;
-            this.dane_button.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.dane_button.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.dane_button.OnDisabledState.IconLeftImage = null;
-            this.dane_button.OnDisabledState.IconRightImage = null;
-            this.dane_button.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.dane_button.onHoverState.BorderRadius = 1;
-            this.dane_button.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.dane_button.onHoverState.BorderThickness = 1;
-            this.dane_button.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.dane_button.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.dane_button.onHoverState.IconLeftImage = null;
-            this.dane_button.onHoverState.IconRightImage = null;
-            this.dane_button.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.dane_button.OnIdleState.BorderRadius = 1;
-            this.dane_button.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.dane_button.OnIdleState.BorderThickness = 1;
-            this.dane_button.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.dane_button.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.dane_button.OnIdleState.IconLeftImage = global::Aproksymacja.Properties.Resources.view_details_128;
-            this.dane_button.OnIdleState.IconRightImage = null;
-            this.dane_button.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.dane_button.OnPressedState.BorderRadius = 1;
-            this.dane_button.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.dane_button.OnPressedState.BorderThickness = 1;
-            this.dane_button.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.dane_button.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.dane_button.OnPressedState.IconLeftImage = null;
-            this.dane_button.OnPressedState.IconRightImage = null;
-            this.dane_button.Size = new System.Drawing.Size(200, 39);
-            this.dane_button.TabIndex = 18;
-            this.dane_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.dane_button.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.dane_button.TextMarginLeft = 0;
-            this.dane_button.TextPadding = new System.Windows.Forms.Padding(0);
-            this.dane_button.UseDefaultRadiusAndThickness = true;
-            this.dane_button.Click += new System.EventHandler(this.dane_button_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Aproksymacja.Properties.Resources.aproksymacja_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(188, 71);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.ActiveImage = null;
-            this.bunifuImageButton1.AllowAnimations = true;
-            this.bunifuImageButton1.AllowBuffering = false;
-            this.bunifuImageButton1.AllowToggling = false;
-            this.bunifuImageButton1.AllowZooming = true;
-            this.bunifuImageButton1.AllowZoomingOnFocus = false;
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.bunifuImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ErrorImage")));
-            this.bunifuImageButton1.FadeWhenInactive = false;
-            this.bunifuImageButton1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.bunifuImageButton1.Image = global::Aproksymacja.Properties.Resources.NicePng_close_button_png_521935;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.ImageLocation = null;
-            this.bunifuImageButton1.ImageMargin = 0;
-            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(19, 19);
-            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(20, 20);
-            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(861, 7);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Rotation = 0;
-            this.bunifuImageButton1.ShowActiveImage = true;
-            this.bunifuImageButton1.ShowCursorChanges = true;
-            this.bunifuImageButton1.ShowImageBorders = true;
-            this.bunifuImageButton1.ShowSizeMarkers = false;
-            this.bunifuImageButton1.Size = new System.Drawing.Size(20, 20);
-            this.bunifuImageButton1.TabIndex = 18;
-            this.bunifuImageButton1.ToolTipText = "";
-            this.bunifuImageButton1.WaitOnLoad = false;
-            this.bunifuImageButton1.Zoom = 0;
-            this.bunifuImageButton1.ZoomSpeed = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(300, 15);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 19);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Autorzy";
             // 
             // bunifuDragControl1
             // 
@@ -1151,6 +1151,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1160,13 +1161,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.bunifuPages1.ResumeLayout(false);
             this.dane_page.ResumeLayout(false);
             this.dane_page.PerformLayout();
             this.wykres_page.ResumeLayout(false);
             this.autorzy_page.ResumeLayout(false);
             this.autorzy_page.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

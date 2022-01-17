@@ -106,8 +106,22 @@ namespace Aproksymacja
 
         private void button_oblicz_Click(object sender, EventArgs e)
         {
-            //Adam - obliczanie Sx i Txy
+            richTextBox1.Clear();
+            //Grzegorz - zabezpieczenia 
+            if (this.chartPoints.Count() != this.lp)
+            {
+                MessageBox.Show("Wprowadziłeś za mało punktów.");
+                return;
+            }
+
             this.sw = Convert.ToInt32(numeric_sw.Value);
+            if (this.sw > (this.lp - 1))
+            {
+                MessageBox.Show("Stopień wielomianu jest zbyt wysoki względem ilości podanych punktów.");
+                return;
+            }
+
+            //Adam - obliczanie Sx i Txy
             double[,] tab = new double[this.sw + 1, this.sw + 2];
             richTextBox1.AppendText("Stopień wielomianu: " + sw.ToString() + Environment.NewLine);
             int liczbaS = (this.sw * 2) + 1;
